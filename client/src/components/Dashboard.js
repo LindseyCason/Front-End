@@ -109,7 +109,11 @@ function Dashboard(){
         //FOCUS ON CHARACTER WHILE SCROLL IS ENABLED
 
             var elmnt = document.getElementById("char");
-            elmnt.scrollIntoView();
+            elmnt.scrollIntoView({
+                behavior: smooth,
+                block: center,
+                inline: center,
+            });
           
      
     }
